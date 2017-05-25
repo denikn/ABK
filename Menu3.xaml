@@ -1,0 +1,96 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:ec="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
+    x:Class="ABK.Menu3"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <phone:Pivot>
+            <phone:Pivot.Background>
+                <ImageBrush Stretch="Fill" ImageSource="/Assets/b kamus.png"/>
+            </phone:Pivot.Background>
+            <phone:PivotItem>
+                <Grid Margin="0,100,0,50">
+                    <Button HorizontalAlignment="Left" Height="311" VerticalAlignment="Top" Width="270" BorderBrush="{x:Null}" Margin="-29,-11,0,0">
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="/Assets/kamus/bagian tubuh.png"/>
+                        </Button.Background>
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <ec:NavigateToPageAction TargetPage="/kamus1.xaml"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </Button>
+                    <Button HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="269" Margin="212,129,-25,0" BorderBrush="{x:Null}">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <ec:NavigateToPageAction TargetPage="/Kamus5.xaml"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="/Assets/kamus/kata kerja.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button HorizontalAlignment="Left" Height="170" VerticalAlignment="Top" Width="269" Margin="212,-11,-25,0" BorderBrush="{x:Null}">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <ec:NavigateToPageAction TargetPage="/Kamus2.xaml"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="/Assets/kamus/tempat.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button HorizontalAlignment="Left" Height="311" VerticalAlignment="Top" Width="269" Margin="212,270,-25,-21" BorderBrush="{x:Null}">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <ec:NavigateToPageAction TargetPage="/Kamus6.xaml"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="/Assets/kamus/angka.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="270" Margin="-29,270,0,0" BorderBrush="{x:Null}">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <ec:NavigateToPageAction TargetPage="/Kamus4.xaml"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="/Assets/kamus/keluarga.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button  HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="270" Margin="-29,410,0,-21" BorderBrush="{x:Null}">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <ec:NavigateToPageAction TargetPage="/Kamus3.xaml"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="/Assets/kamus/predikat.png"/>
+                        </Button.Background>
+                    </Button>
+                </Grid>
+            </phone:PivotItem>
+
+            <phone:PivotItem>
+                <Grid Margin="0,120,0,50">
+                    <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="Coming Soon :)" VerticalAlignment="Center" Height="202" Width="271" FontWeight="Bold" FontSize="72" TextAlignment="Left"/>
+                </Grid>
+            </phone:PivotItem>
+        </phone:Pivot>
+    </Grid>
+
+</phone:PhoneApplicationPage>

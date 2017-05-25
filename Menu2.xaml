@@ -1,0 +1,44 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="ABK.Menu2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True" BackKeyPress="_close">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="/Assets/back ungguh bahasa.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="0,145,0,0" Grid.RowSpan="2">
+            <Grid Height="345" Background="#FFFF7F26">
+                <Image x:Name="soal" HorizontalAlignment="Center" Height="271" Margin="0" VerticalAlignment="Center" Width="194" Source="/Assets/dewasa/lingguh.png"/>
+            </Grid>
+            <Grid Height="117">
+                <TextBlock x:Name="jawaban" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="48" Foreground="Black" FontWeight="Bold" Text="Yuni lagi __________"/>
+            </Grid>
+            <Grid Height="162">
+                <TextBlock x:Name="nama1" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="48" Foreground="Black" FontWeight="Bold"/>
+                <Button x:Name="s" Content="Mulai" HorizontalAlignment="Left" Height="152" Margin="280,0,0,0" VerticalAlignment="Top" Width="152" BorderBrush="{x:Null}" Foreground="White" Click="sc">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Assets/play.png" Stretch="Fill"/>
+                    </Button.Background>
+                </Button>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</phone:PhoneApplicationPage>

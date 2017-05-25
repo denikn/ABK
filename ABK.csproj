@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CEBD1756-C62A-41D3-B279-4971635C44A5}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ABK</RootNamespace>
+    <AssemblyName>ABK</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>ABK_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>ABK.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Bantuan.xaml.cs">
+      <DependentUpon>Bantuan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kamus1.xaml.cs">
+      <DependentUpon>Kamus1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kamus1_1.xaml.cs">
+      <DependentUpon>Kamus1_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kamus2.xaml.cs">
+      <DependentUpon>Kamus2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kamus2_1.xaml.cs">
+      <DependentUpon>Kamus2_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kamus3.xaml.cs">
+      <DependentUpon>Kamus3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kamus3_1.xaml.cs">
+      <DependentUpon>Kamus3_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kamus4.xaml.cs">
+      <DependentUpon>Kamus4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kamus4_1.xaml.cs">
+      <DependentUpon>Kamus4_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kamus5.xaml.cs">
+      <DependentUpon>Kamus5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kamus5_1.xaml.cs">
+      <DependentUpon>Kamus5_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kamus6.xaml.cs">
+      <DependentUpon>Kamus6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kamus6_1.xaml.cs">
+      <DependentUpon>Kamus6_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu1.xaml.cs">
+      <DependentUpon>Menu1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu2.xaml.cs">
+      <DependentUpon>Menu2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu3.xaml.cs">
+      <DependentUpon>Menu3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="Bantuan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kamus1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kamus1_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kamus2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kamus2_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kamus3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kamus3_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kamus4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kamus4_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kamus5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kamus5_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kamus6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kamus6_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Menu1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Menu2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Menu3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\anak\lingguh.png" />
+    <Content Include="Assets\anak\maca.png" />
+    <Content Include="Assets\anak\madang.png" />
+    <Content Include="Assets\anak\mlaku.png" />
+    <Content Include="Assets\anak\ndelok.png" />
+    <Content Include="Assets\anak\ngrungokne.png" />
+    <Content Include="Assets\anak\numpak.png" />
+    <Content Include="Assets\anak\tangi.png" />
+    <Content Include="Assets\anak\turu.png" />
+    <Content Include="Assets\anak\wenehi.png" />
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\b kamus.png" />
+    <Content Include="Assets\b.png" />
+    <Content Include="Assets\back anak.png" />
+    <Content Include="Assets\back angka.png" />
+    <Content Include="Assets\back kamus 2.png" />
+    <Content Include="Assets\back keluarga.png" />
+    <Content Include="Assets\back kerja.png" />
+    <Content Include="Assets\back predikat.png" />
+    <Content Include="Assets\back tempat.png" />
+    <Content Include="Assets\back ungguh bahasa.png" />
+    <Content Include="Assets\background.png" />
+    <Content Include="Assets\bantuan.png" />
+    <Content Include="Assets\bantuan1.png" />
+    <Content Include="Assets\dewasa\lingguh.png" />
+    <Content Include="Assets\dewasa\maca.png" />
+    <Content Include="Assets\dewasa\madang.png" />
+    <Content Include="Assets\dewasa\mlaku.png" />
+    <Content Include="Assets\dewasa\ndelok.png" />
+    <Content Include="Assets\dewasa\ngrungokne.png" />
+    <Content Include="Assets\dewasa\numpak.png" />
+    <Content Include="Assets\dewasa\tangi.png" />
+    <Content Include="Assets\dewasa\turu.png" />
+    <Content Include="Assets\dewasa\wenehi.png" />
+    <Content Include="Assets\ApplicationIcon.png" />
+    <Content Include="Assets\Icon\menu1.png" />
+    <Content Include="Assets\Icon\menu2.png" />
+    <Content Include="Assets\Icon\menu3.png" />
+    <Content Include="Assets\Icon\menu4.png" />
+    <Content Include="Assets\kamus\angka.png" />
+    <Content Include="Assets\kamus\bagian tubuh speech\alis.png" />
+    <Content Include="Assets\kamus\bagian tubuh speech\gigi.png" />
+    <Content Include="Assets\kamus\bagian tubuh speech\hidung.png" />
+    <Content Include="Assets\kamus\bagian tubuh speech\kaki.png" />
+    <Content Include="Assets\kamus\bagian tubuh speech\kepala.png" />
+    <Content Include="Assets\kamus\bagian tubuh speech\kumis.png" />
+    <Content Include="Assets\kamus\bagian tubuh speech\mata.png" />
+    <Content Include="Assets\kamus\bagian tubuh speech\mulut.png" />
+    <Content Include="Assets\kamus\bagian tubuh speech\perut.png" />
+    <Content Include="Assets\kamus\bagian tubuh speech\rambut.png" />
+    <Content Include="Assets\kamus\bagian tubuh speech\tangan.png" />
+    <Content Include="Assets\kamus\bagian tubuh speech\telinga.png" />
+    <Content Include="Assets\kamus\bagian tubuh.png" />
+    <Content Include="Assets\kamus\bagian tubuh\alis.png" />
+    <Content Include="Assets\kamus\bagian tubuh\gigi.png" />
+    <Content Include="Assets\kamus\bagian tubuh\hidung.png" />
+    <Content Include="Assets\kamus\bagian tubuh\kaki.png" />
+    <Content Include="Assets\kamus\bagian tubuh\kepala.png" />
+    <Content Include="Assets\kamus\bagian tubuh\kumis.png" />
+    <Content Include="Assets\kamus\bagian tubuh\mata.png" />
+    <Content Include="Assets\kamus\bagian tubuh\mulut.png" />
+    <Content Include="Assets\kamus\bagian tubuh\perut.png" />
+    <Content Include="Assets\kamus\bagian tubuh\rambut.png" />
+    <Content Include="Assets\kamus\bagian tubuh\tangan.png" />
+    <Content Include="Assets\kamus\bagian tubuh\telinga.png" />
+    <Content Include="Assets\kamus\kata kerja.png" />
+    <Content Include="Assets\kamus\keluarga.png" />
+    <Content Include="Assets\kamus\predikat.png" />
+    <Content Include="Assets\kamus\tempat.png" />
+    <Content Include="Assets\keluarga\adik.png" />
+    <Content Include="Assets\keluarga\anak.png" />
+    <Content Include="Assets\keluarga\bapak.png" />
+    <Content Include="Assets\keluarga\bibi.png" />
+    <Content Include="Assets\keluarga\ibu.png" />
+    <Content Include="Assets\keluarga\istri.png" />
+    <Content Include="Assets\keluarga\kakak laki-laki.png" />
+    <Content Include="Assets\keluarga\kakak perempuan.png" />
+    <Content Include="Assets\keluarga\paman.png" />
+    <Content Include="Assets\keluarga\pembantu.png" />
+    <Content Include="Assets\keluarga\saya.png" />
+    <Content Include="Assets\keluarga\kakek-nenek.png" />
+    <Content Include="Assets\play.png" />
+    <Content Include="Assets\record.png" />
+    <Content Include="Assets\record1.png" />
+    <Content Include="Assets\Tiles\IconicTileSmall.png" />
+    <Content Include="Assets\Tiles\IconicTileMediumLarge.png" />
+    <Content Include="Assets\Tiles\FlipCycleTileSmall.png" />
+    <Content Include="Assets\Tiles\FlipCycleTileMedium.png" />
+    <Content Include="Assets\Tiles\FlipCycleTileLarge.png" />
+    <Content Include="Assets\tempat\desa.png" />
+    <Content Include="Assets\tempat\gereja.png" />
+    <Content Include="Assets\tempat\hutan.png" />
+    <Content Include="Assets\tempat\jalan.png" />
+    <Content Include="Assets\tempat\joglo.png" />
+    <Content Include="Assets\tempat\makam.png" />
+    <Content Include="Assets\tempat\masjid.png" />
+    <Content Include="Assets\tempat\pasar.png" />
+    <Content Include="Assets\tempat\rumah sakit.png" />
+    <Content Include="Assets\tempat\rumah.png" />
+    <Content Include="Assets\tempat\sekolah.png" />
+    <Content Include="Assets\tempat\taman.png" />
+    <Content Include="large.png" />
+    <Content Include="logo.png" />
+    <Content Include="small.png" />
+    <Content Include="SplashScreenImage.png" />
+    <Content Include="wide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Interactions, Version=3.9.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Interactivity, Version=3.9.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>
